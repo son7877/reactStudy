@@ -1,6 +1,6 @@
 import { useState } from "react";
 // useState [변수, set함수] = useState(초기값);
-//입력으로 텍스트 변경하기
+// 입력으로 텍스트 변경하기
 function Person({ age }) {
   const [name, setName] = useState("안홍범");
   console.log("Person");
@@ -12,4 +12,5 @@ function Person({ age }) {
     </>
   );
 }
+
 export default Person;
