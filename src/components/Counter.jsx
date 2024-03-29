@@ -2,7 +2,7 @@ import { useState } from "react";
 
 function Counter() {
   const [i, setI] = useState(0);
-  const [input, setInput] = useState("");
+  const [input, setInput] = useState(0);
   const plus = () => {
     setI(i + Number(input));
     setInput("");
@@ -25,7 +25,6 @@ function Counter() {
       <h1>{i}</h1>
       <input
         placeholder="숫자를 입력해주세요"
-        value={input}
         onChange={(e) => setInput(e.target.value)}
         type="number"
       />
